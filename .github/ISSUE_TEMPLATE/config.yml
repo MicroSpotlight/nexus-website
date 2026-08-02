@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Privacy or sensitive request
+    url: https://nexus.microspotlight.team/support/
+    about: Do not post credentials, private URLs, personal data, or private media in a public issue.

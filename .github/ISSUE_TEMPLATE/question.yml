@@ -1,0 +1,15 @@
+name: Question
+description: Ask a product or setup question.
+title: "[Question] "
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not include credentials, private URLs, tokens, cookies, personal data, or private media.
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to know?
+    validations:
+      required: true
