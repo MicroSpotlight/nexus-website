@@ -35,6 +35,7 @@
         </nav>
         <div class="header-actions">
           <button class="language-toggle" type="button" data-language-toggle>中文</button>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到深色主题" aria-pressed="false"><span class="moon" aria-hidden="true">☾</span><span class="sun" aria-hidden="true">☀</span></button>
           <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open navigation" aria-expanded="false"><span></span></button>
         </div>
       </div>
@@ -44,8 +45,8 @@
       <section class="hero page-shell">
         <div class="hero-copy" data-reveal>
           <picture>
-            <source srcset="./assets/nexus-app-icon-dark.png" media="(prefers-color-scheme: dark)" />
-            <img class="hero-icon" src="./assets/nexus-app-icon-light.png" width="1024" height="1024" alt="Nexus app icon" />
+            <img class="hero-icon hero-icon-light" src="./assets/nexus-app-icon-light.png" width="1024" height="1024" alt="Nexus app icon" />
+            <img class="hero-icon hero-icon-dark" src="./assets/nexus-app-icon-dark.png" width="1024" height="1024" alt="" aria-hidden="true" />
           </picture>
           <span class="status-pill"><span data-lang="en">Preparing for the App Store</span><span data-lang="zh">正在准备 App Store 首发</span></span>
           <h1 class="display-title"><span data-lang="en">Your media.<br />One player.</span><span data-lang="zh">你的内容，<br />统一播放。</span></h1>

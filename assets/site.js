@@ -21,6 +21,27 @@
 
   setLanguage(savedLanguage || preferredLanguage);
 
+  const savedTheme = localStorage.getItem("nexus-site-theme");
+  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+
+  function setTheme(theme) {
+    const next = theme === "dark" ? "dark" : "light";
+    root.dataset.theme = next;
+    localStorage.setItem("nexus-site-theme", next);
+    document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+      button.setAttribute("aria-label", next === "dark" ? "Switch to light theme" : "切换到深色主题");
+      button.setAttribute("aria-pressed", String(next === "dark"));
+    });
+  }
+
+  setTheme(savedTheme || systemTheme);
+
+  document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+    button.addEventListener("click", () => {
+      setTheme(root.dataset.theme === "dark" ? "light" : "dark");
+    });
+  });
+
   document.querySelectorAll("[data-language-toggle]").forEach((button) => {
     button.addEventListener("click", () => {
       setLanguage(root.dataset.language === "zh" ? "en" : "zh");
