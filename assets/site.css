@@ -211,8 +211,13 @@
 
   .product-stage {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: clamp(620px, 70vw, 860px);
     margin-top: 84px;
+    padding: clamp(36px, 6vw, 72px) clamp(28px, 7vw, 96px);
+    gap: clamp(22px, 6vw, 92px);
     overflow: hidden;
     border-radius: 32px;
     background: var(--panel-strong);
@@ -220,10 +225,10 @@
   }
   .product-stage::before { position: absolute; inset: 9% 8%; border: 1px solid var(--border); border-radius: 26px; content: ""; }
   .ipad-shot {
-    position: absolute;
-    top: 9%;
-    left: 9%;
-    width: min(77%, 880px);
+    position: relative;
+    z-index: 1;
+    width: min(62%, 790px);
+    height: auto;
     border: 8px solid color-mix(in oklab, var(--panel), black 7%);
     border-radius: 25px;
     background: var(--panel);
@@ -231,10 +236,12 @@
     transform: rotate(-1.1deg);
   }
   .iphone-shot {
-    position: absolute;
-    right: 7%;
-    bottom: -10%;
-    width: min(25%, 265px);
+    position: relative;
+    z-index: 2;
+    width: min(23%, 275px);
+    height: auto;
+    align-self: flex-end;
+    margin-bottom: 1%;
     border: 7px solid #101014;
     border-radius: 42px;
     background: #101014;
@@ -377,9 +384,9 @@
     .brand-link small { display: none; }
     .hero { padding-top: 64px; }
     .display-title { font-size: clamp(50px, 15vw, 72px); }
-    .product-stage { min-height: 560px; margin-top: 56px; border-radius: 24px; }
-    .ipad-shot { top: 7%; left: 5%; width: 96%; border-width: 5px; border-radius: 18px; }
-    .iphone-shot { right: 7%; bottom: -4%; width: 43%; border-width: 5px; border-radius: 30px; }
+    .product-stage { min-height: 680px; margin-top: 56px; padding: 40px 20px 30px; border-radius: 24px; flex-direction: column; gap: 18px; }
+    .ipad-shot { width: min(86%, 450px); border-width: 5px; border-radius: 18px; transform: none; }
+    .iphone-shot { width: min(38%, 165px); align-self: flex-end; margin: -8px 7% 0 0; border-width: 5px; border-radius: 30px; transform: none; }
     .boundary-band, .narrative, .privacy-section { padding: 88px 0; }
     .feature-row { grid-template-columns: 48px 1fr; padding: 30px 0; gap: 18px; }
     .feature-row p { grid-column: 2; }
