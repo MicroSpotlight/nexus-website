@@ -8,7 +8,7 @@
 ### Logo and app icon
 - Light icon: `assets/nexus-app-icon-light.png` (1024×1024, RGB).
 - Dark icon: `assets/nexus-app-icon-dark.png` (1024×1024, RGB).
-- Current in-app mark: paired black/coral capsules on a warm-white continuous rounded square, ported from `NexusBrandMark` for compact website navigation.
+- Current in-app mark: paired black/blue capsules on a white rounded square, supplied as the new default product icon and shared by the app and website.
 - Intended uses: app icon in hero/social previews; in-app mark in navigation and compact signatures.
 - Do not stretch, recolor, outline, rotate, or combine either mark with another brand.
 
@@ -56,7 +56,6 @@
 - Cinema-capable
 
 ## Completeness notes
-- The current production app icon uses blue/cyan/purple while the in-app default accent is coral. The website treats the icon as product artwork and coral as the interface/action color rather than blending them into a new gradient identity.
+- The default product icon uses black and blue while the in-app interface accent remains coral. The website treats the icon as product artwork and coral as the interface/action color rather than blending them into a new identity.
 - No custom marketing photography is used. Product UI is the hero asset.
 - English simulator screenshots were not available in the current evidence set; the selected screenshots show the real Simplified Chinese interface and the website supplies complete English and Chinese text independently.
-
