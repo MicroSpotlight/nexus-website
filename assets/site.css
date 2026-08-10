@@ -196,6 +196,9 @@
   .button.secondary { border-color: var(--border); background: var(--panel); }
   .button.pending { cursor: default; }
   .button.pending:hover { transform: none; }
+  .button[data-download-state="unavailable"] { color: var(--muted); border-style: dashed; background: var(--panel-strong); }
+  .button[data-download-state="available"] { color: white; border-color: var(--accent); background: var(--accent); box-shadow: 0 16px 34px color-mix(in oklab, var(--accent), transparent 72%); }
+  .button[data-download-state="available"]:hover { border-color: var(--accent-strong); background: var(--accent-strong); }
 
   .status-pill { display: inline-flex; align-items: center; justify-self: start; min-height: 34px; padding: 0 12px; gap: 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--secondary); background: var(--panel); font-size: 13px; font-weight: 650; }
   .status-pill::before { width: 7px; height: 7px; border-radius: 50%; background: var(--success); content: ""; box-shadow: 0 0 0 4px color-mix(in oklab, var(--success), transparent 86%); }
@@ -221,8 +224,9 @@
   :root[data-theme="dark"] .hero-icon-light { display: none; }
   :root[data-theme="dark"] .hero-icon-dark { display: block; }
   .hero-copy .lede { max-width: 690px; }
-  .hero-actions { display: flex; align-items: center; flex-wrap: wrap; margin-top: 8px; gap: 18px; }
-  .hero-note { color: var(--muted); font-size: 13px; }
+  .hero-actions { display: flex; align-items: center; flex-wrap: wrap; margin-top: 8px; gap: 12px; }
+  .hero-note { flex: 0 0 100%; color: var(--muted); font-size: 13px; }
+  .hero-note + .hero-note { margin-top: -6px; }
 
   /* Hero device system: 12-column stage, one shared bottom baseline, 8px rhythm. */
   .product-stage {
@@ -398,6 +402,7 @@
     .header-inner { min-height: 64px; }
     .brand-link small { display: none; }
     .hero { padding-top: 64px; }
+    .hero-actions .button { width: 100%; }
     .display-title { font-size: clamp(50px, 15vw, 72px); }
     .product-stage { --stage-floor: 24px; grid-template-columns: 1fr; align-items: center; min-height: 680px; margin-top: 56px; padding: 40px 20px var(--stage-floor); border-radius: 24px; gap: 18px; }
     .ipad-shot { width: min(86%, 450px); border-width: 5px; border-radius: 18px; }
