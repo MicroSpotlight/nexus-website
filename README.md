@@ -3,6 +3,7 @@
 Official static website for Nexus by MicroSpotlight.
 
 - Website: <https://nexus.microspotlight.team/>
+- Android beta: <https://github.com/MicroSpotlight/nexus-website/releases/tag/android-v0.1.0-beta-2>
 - Changelog: <https://nexus.microspotlight.team/changelog/>
 - Privacy Policy: <https://nexus.microspotlight.team/privacy/>
 - Terms of Service: <https://nexus.microspotlight.team/terms/>
@@ -34,7 +35,7 @@ After DNS propagation, GitHub Pages can issue the HTTPS certificate for `nexus.m
 
 ## Content boundary
 
-Nexus does not provide media content or built-in sources. Website screenshots use synthetic test data and must never be replaced with real private endpoints, credentials, or unlicensed artwork.
+Nexus does not provide media content or built-in sources. The website covers iPhone, iPad, and Android while preserving each platform's native interaction model. Website screenshots use synthetic test data and must never be replaced with real private endpoints, credentials, or unlicensed artwork.
 
 ## Design records
 

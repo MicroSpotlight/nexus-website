@@ -1,7 +1,7 @@
 # Nexus · Brand Spec
-> Captured: 2026-08-02
-> Source: Nexus SwiftUI design tokens, current simulator evidence, and the production AppIcon asset catalog
-> Completeness: full for website v1; App Store marketing screenshots are still pending
+> Captured: 2026-08-12
+> Source: Nexus iOS and Android design tokens, current simulator evidence, and the production app icon assets
+> Completeness: full for the cross-platform website; platform-store marketing screenshots are still pending
 
 ## Core assets
 
@@ -18,6 +18,11 @@
 - Supporting iPad details: `assets/nexus-detail-ipad.png` (2064×2752).
 - Screenshots are current synthetic UI-test evidence and contain no real source URLs, credentials, private user data, or third-party artwork.
 - Selection notes: chosen from more than ten current iPhone/iPad candidates for clarity, resolution, product coverage, and App Store-safe content. Each is suitable for large responsive display.
+- Android is represented by its dedicated platform card and release information until a production-safe Android marketing screenshot set is available. Existing iPhone/iPad screenshots must not be relabeled as Android UI.
+
+### Social preview
+- Cross-platform Open Graph card: `assets/nexus-social-card.png` (1200×630, RGB).
+- The device imagery is explicitly representative iPhone/iPad UI; the platform line communicates product availability without presenting it as Android UI.
 
 ## Auxiliary assets
 
@@ -36,7 +41,7 @@
 - Success: `#52D273`.
 
 ### Typography
-- Display/body: Apple system typography (`-apple-system`, SF Pro on Apple platforms).
+- Display/body: native system typography (`-apple-system`, BlinkMacSystemFont, Segoe UI, Roboto, and platform fallbacks).
 - Simplified Chinese: PingFang SC fallback.
 - Numeric metadata: tabular system numerals.
 - Website scale: 88 / 64 / 48 / 32 / 22 / 17 / 15 / 13.
@@ -49,7 +54,7 @@
 - Section headers use a small coral eyebrow followed by a large, tightly tracked title.
 
 ### Vibe keywords
-- Apple-native
+- Platform-native
 - Calm
 - Precise
 - User-controlled
@@ -58,4 +63,4 @@
 ## Completeness notes
 - The default product icon uses black and blue while the in-app interface accent remains coral. The website treats the icon as product artwork and coral as the interface/action color rather than blending them into a new identity.
 - No custom marketing photography is used. Product UI is the hero asset.
-- English simulator screenshots were not available in the current evidence set; the selected screenshots show the real Simplified Chinese interface and the website supplies complete English and Chinese text independently.
+- English simulator screenshots and production-safe Android screenshots were not available in the current evidence set; the selected screenshots show the real Simplified Chinese iPhone/iPad interface, and the website supplies complete English and Chinese text independently.
