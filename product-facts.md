@@ -1,14 +1,14 @@
 # Nexus product facts
-> Verified: 2026-08-12
-> Sources: local Nexus repository at commit `7ec45b0e`; App Store Connect app `6779860604`; [MicroSpotlight on GitHub](https://github.com/MicroSpotlight)
+> Verified: 2026-08-13
+> Sources: local Nexus repository; App Store Connect app `6779860604`; [MicroSpotlight on GitHub](https://github.com/MicroSpotlight)
 
 ## Existence and status
 - Product: Nexus — a MicroSpotlight media player for iPhone, iPad, and Android.
-- Android release status: version 0.1.0-beta-2 is available as a signed APK from the website's GitHub Releases.
+- Android release status: version 0.1.0-beta6 is available as a signed APK from the website's GitHub Releases.
 - Apple release status: the iPhone and iPad edition is preparing for the App Store and is not publicly downloadable yet.
 - Minimum systems: Android 8.0; iOS/iPadOS 17.0.
 - Public website repository: [MicroSpotlight/nexus-website](https://github.com/MicroSpotlight/nexus-website).
-- Android download: [Nexus Android 0.1.0-beta-2](https://github.com/MicroSpotlight/nexus-website/releases/download/android-v0.1.0-beta-2/Nexus-Android.apk).
+- Android download: [Nexus Android 0.1.0-beta6](https://github.com/MicroSpotlight/nexus-website/releases/download/android-v0.1.0-beta6/Nexus-Android.apk).
 
 ## Product boundary
 - Nexus does not provide, host, recommend, proxy, or curate media content or media sources.
