@@ -3,7 +3,8 @@
 Official static website for Nexus by MicroSpotlight.
 
 - Website: <https://nexus.microspotlight.team/>
-- Android beta: <https://github.com/MicroSpotlight/nexus-website/releases/tag/android-v0.1.0-beta6>
+- Android on Google Play: <https://play.google.com/store/apps/details?id=team.MicroSpotlight.Nexus>
+- Android direct APK: <https://github.com/MicroSpotlight/nexus-website/releases/tag/android-v0.1.0-beta6>
 - Changelog: <https://nexus.microspotlight.team/changelog/>
 - Privacy Policy: <https://nexus.microspotlight.team/privacy/>
 - Terms of Service: <https://nexus.microspotlight.team/terms/>
